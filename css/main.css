@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --dark-blue: #010D0D;
+  --background-black: #20272E;
+  --mid-blue: #35858B;
+  --baby-blue: #4FBDBA;
+  --off-white: #FFEFEF;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.hero {
+  text-align: center;
+  z-index: 0;
+}
+
+.hero .header {
+  padding-top: 10em;
+}
+
+.hero .header h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.hero .header p {
+  margin: 0;
+  letter-spacing: 0.3em;
+}
+
+.hero img {
+  width: 70%;
+  margin: 0;
+  margin-top: 3em;
+  margin-bottom: -1em;
+}
+
+.about {
+  margin: 0;
+  z-index: 1;
+}
+
+.about .snippet {
+  background-color: var(--background-black);
+  color: var(--off-white);
+  padding: 1em;
+  z-index: 100;
+}
+/*# sourceMappingURL=main.css.map */
