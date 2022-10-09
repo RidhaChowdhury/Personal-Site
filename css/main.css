@@ -8,12 +8,6 @@
   --off-white: #FFEFEF;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
 body {
   background: var(--off-white);
   margin: 0;
@@ -22,50 +16,67 @@ body {
 
 .hero {
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
-.hero .header {
-  padding-top: 10em;
+.hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.hero .container .header {
   z-index: 1;
 }
-.hero .header h1 {
+.hero .container .header h1 {
   font-size: 2.5em;
   line-height: 1.3em;
   margin: 0;
 }
-.hero .header h2 {
+.hero .container .header h2 {
   font-size: 1.5em;
   line-height: 1.3em;
   margin: 0;
   color: #c43535;
 }
-.hero .header p {
+.hero .container .header p {
   margin: 0;
   letter-spacing: 0.3em;
 }
-.hero .wrapper {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60%;
-  z-index: 0;
-  background-image: url("../images/Transparent Headshot.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-}
-@media screen and (max-width: 768px) {
-  .hero .wrapper {
-    height: 50%;
-  }
+.hero .container .hero-img {
+  height: 65vh;
+  margin-top: 5em;
+  align-self: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  .hero .container {
+    padding-top: 2em;
+    flex-direction: column;
+    align-content: center;
+  }
+  .hero .container .header {
+    margin-bottom: 2em;
+  }
+  .hero .container .hero-img {
+    height: 40vh;
+    margin-top: 0;
+    align-self: center;
+  }
+}
 .about {
-  margin: 0;
+  top: 100%;
   z-index: 1;
 }
 .about .snippet {
   background-color: var(--background-black);
   color: var(--off-white);
-  padding: 1em;
+  padding: 0.5em;
   z-index: 100;
+}
+.about .snippet p {
+  margin: 1em 5em;
 }/*# sourceMappingURL=main.css.map */
